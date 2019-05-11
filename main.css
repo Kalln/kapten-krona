@@ -1,0 +1,37 @@
+body {
+    background-color: white;
+    margin: 80px 350px 100px 350px;
+}
+
+
+div#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: grey;
+    background: #333;
+    padding: 20px;
+    font-family: Arial;
+}
+
+div#footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: grey;
+    background: #333;
+    padding: 8px;
+}   
+
+h1 {
+    color: green;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New';
+
+}
