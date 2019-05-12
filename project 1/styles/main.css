@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    margin: 5px 200px 50px 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#first_hotel {
+    padding: 10px 25px 10px 25px;
+    margin: 50px;
+    background-color: beige;
+    text-align: center;
+    float: right;
+}
+#second_hotel {
+    padding: 10px 25px 10px 25px;
+    margin: 50px;
+    background-color: wheat;
+    float: left;
+    text-align: center;
+}
+
+#comment {
+    color: white;
+    background-color: grey;
+    margin: 250px 50px 100px 50px;
+    padding: 50px;
+    border-radius: 3px; 
+}
+hr {
+    align-items: center;
+    margin-top: 150px;
+    width: 500px;
+    height: 10px;
+}

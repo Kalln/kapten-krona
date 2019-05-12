@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kaptenkrona</title>
+
+        <link href="styles/main.css" rel="stylesheet" />
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    </head>
+    <body>
+        
+            <div id="head">
+                <h1>Book Your Hotel Today(!!)</h1>
+            </div>
+        <div id="first_hotel">    
+            <p>
+                The fancy <span id="hotel_name">(N/A)</span> Hotel is available!
+            </p>
+            <p>
+            <span id="hotel_rooms"> (N/A) </span> rooms available. <br>
+            <a href="_blank">Book here!</a>
+            </p>
+        </div>
+        <div id="second_hotel">    
+                <p>
+                    The fantastic: '<span id="hotel_name2">(N/A)</span>' Hotel is available!
+                </p>
+                <p>
+                    <span id="hotel_rooms2"> (N/A) </span> rooms available. <br>
+                    <a href="_blank">Book here!</a>
+                </p>
+        </div>
+        <div id="line">
+            <hr>
+        </div>
+        <div id="comment">
+            
+            <p>
+                This page is created with the help of JS and is the first website I made that used JS.<br><br>
+
+                <strong>What it have done:</strong> I have created a function named hotel. The function recieves three paramters:
+                name, rooms and booked (function(name, rooms, booked) ). The first one is telling the function what the property called name is supposed
+                to have for value. In the first case it would be 'Park' (this.name = name). Thereafter the hotels number of rooms
+                in total (this.rooms = rooms). Third one the booked amount of rooms (this.booked = booked). In the
+                end this created (with the correct amount of entered paramters) a object.<br><br>
+
+                I thereafter created another function that inside of the function described above that caluclates how
+                many rooms are available in total. it returns the amount of rooms. <br><br>
+
+                I then created the objects with the help of the created function that i described above. <br>
+                <pre>
+                <code>
+                var Quay = new hotel('Quay', 40, 25);<br>
+                var Park = new hotel('Park', 140, 77); <br><br>
+                </code>
+                </pre>
+
+                I then replaced the values in the html with the help of this: <br>
+                <code>
+                var elName = document.getElementById('hotel_name');<br>
+                elName.textContent = Park.name;<br><br>
+
+                var elRooms = document.getElementById('hotel_rooms');<br>
+                elRooms.textContent = Park.checkAvailability();<br><br>
+                </code>
+
+                And the same with the Quay hotel.<br><br>
+                After all this I did the appropiete things with css to get the layout I wanted.
+
+            </p>
+            <a href="../index.html">Main</a>
+        </div>
+
+        <script src="script/c02.js"></script>
+    </body>
+</html>
